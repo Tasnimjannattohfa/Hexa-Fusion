@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="r.css">
+  <style>
+    .home {
+        margin: 20px;
+        padding: 15px;
+        color: white;
+        border-radius: 5px;
+        background-color: #4d03cd;
+    }
+    
+    a{
+        text-decoration: none;
+        color: white;
+    }
+  </style>
+</head>
+<body>
+    <button class="home"><a href="home.html">Home</a></button><br>
+  <div id="game-container">
+    <h1>Rock, Paper, Scissors</h1>
+    <div id="choices">
+      <button class="choice" data-choice="rock">✊ Rock</button>
+      <button class="choice" data-choice="paper">✋ Paper</button>
+      <button class="choice" data-choice="scissors">✌️ Scissors</button>
+    </div>
+    <div id="results">
+      <p id="player-choice">Your Choice: </p>
+      <p id="computer-choice">Computer Choice: </p>
+      <p id="winner">Winner: </p>
+    </div>
+    <button id="restart-button">Restart</button>
+  </div>
+  <script src="r.js"></script>
+</body>
+</html>

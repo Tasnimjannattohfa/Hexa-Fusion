@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="s.css">
+    <style>
+        #reset {
+            margin: 20px;
+            padding: 15px;
+            color: white;
+            border-radius: 5px;
+            background-color: #4d03cd;
+        }
+        .cell{
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            border: 2px solid #4CAF50;
+            border-radius: 3px;
+
+            font-size: 50px;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+            color: #f60dbf;
+        }
+        .message {
+            margin-top: 20px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 50px;
+            color: rgb(153, 15, 227);
+        }
+        h1{
+            text-align: center;
+            color: #2d06dd;
+
+        }
+        .home {
+            margin: 20px;
+            padding: 15px;
+            color: white;
+            border-radius: 5px;
+            background-color: #4d03cd;
+        }
+        
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <div class="container">
+        <button class="home"><a href="home.html">Home</a></button>
+        <h1>Tic-Tac-Toe</h1>
+
+        <div class="board" id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <button id="reset">Reset</button>
+        <div class="message" id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

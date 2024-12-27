@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="q.css">
+  <style>
+    .home {
+
+      margin: 20px;
+      padding: 15px;
+      color: white;
+      border-radius: 5px;
+      background-color: #4d03cd;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+    <button class="home"><a href="home.html">Home</a></button><br><br>
+    <div class="quiz-container">
+    <h1>Quiz Game</h1>
+    <div id="question-container">
+        <div id="question"></div>
+        <div id="answers"></div>
+        <div id="feedback"></div> <!-- Add this line -->
+    </div>
+    <div id="result-container" style="display: none;">
+        <div id="result"></div>
+        <button onclick="startNewGame()">Start New Game</button>
+      </div>
+    <div id="answers">
+      <!-- Answer buttons will be injected here -->
+    </div>
+    <div id="result-container" style="display: none;">
+      <p id="result">Your score: 0</p>
+      <button onclick="startNewGame()">Start New Game</button>
+    </div>
+  </div>
+  <script src="q.js"></script>
+</body>
+</html>

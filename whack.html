@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whack-a-Mole Game</title>
+  <link rel="stylesheet" href="w.css">
+  <style>
+    .home {
+        margin: 20px;
+        padding: 15px;
+        color: white;
+        border-radius: 5px;
+        background-color: #4d03cd;
+    }
+    
+    a{
+        text-decoration: none;
+        color: white;
+    }
+  </style>
+</head>
+<body>
+    <button class="home"><a href="home.html">Home</a></button><br>
+  <div class="game-container">
+    <h1>Whack-a-Mole</h1>
+    <div id="game-board">
+      <!-- Holes for moles to pop out from -->
+    </div>
+    <div class="score-container">
+      <p>Score: <span id="score">0</span></p>
+      <p>Time left: <span id="time">30</span> seconds</p>
+    </div>
+    <button onclick="startNewGame()">Start New Game</button>
+  </div>
+  <script src="w.js"></script>
+</body>
+</html>
